@@ -1,0 +1,7 @@
+c=int(input())
+g=float(input())
+f=input()
+print(i+c)
+print(g+d)
+e=s+f
+print(e)
