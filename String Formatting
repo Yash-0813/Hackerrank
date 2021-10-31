@@ -1,0 +1,8 @@
+def print_formatted(number):
+    # your code goes here
+    m=len(str(bin(number)))-2
+    for i in range(1,number+1):
+        p,q,r,s=str(i),str(oct(i)),str(hex(i)),str(bin(i))
+        a,b,c,d=len(p),len(q)-2,len(r)-2,len(s)-2
+        print(" "*(m-a)+p," "*(m-b)+q[2:]," "*(m-c)+r.upper()[2:]," "*(m-d)+s[2:])
+
