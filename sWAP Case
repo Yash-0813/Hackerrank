@@ -1,0 +1,14 @@
+def swap_case(s):
+    lst=""
+    for i in range(len(s)):
+        if (s[i].islower()):
+            lst=lst+s[i].upper()
+        elif(s[i].isupper()):
+            lst=lst+s[i].lower()
+        else:
+            lst=lst+s[i]
+    
+            
+            
+    return lst
+
