@@ -1,0 +1,21 @@
+if __name__ == '__main__':
+    N = int(input())
+    output=[]
+    for i in range(0,N):
+        m=input().split()
+        if m[0]=="print":
+            print(output)
+        elif(m[0]=="insert"):
+            output.insert(int(m[1]),int(m[2]))
+        elif(m[0]=="remove"):
+            output.remove(int(m[1]))
+        elif(m[0]=="pop"):
+            output.pop()
+        elif(m[0]=="append"):
+            output.append(int(m[1]))
+        elif(m[0]=="sort"):
+            output.sort()
+        else:
+            output.reverse()
+            
+        
