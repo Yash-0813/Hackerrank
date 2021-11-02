@@ -1,0 +1,36 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+#
+# Complete the 'findSubstring' function below.
+#
+# The function is expected to return a STRING.
+# The function accepts following parameters:
+#  1. STRING s
+#  2. INTEGER k
+#
+
+def findSubstring(s, k):
+    l=["a","e","i","o","u"]
+    str=""
+    max=0
+    for i in range(len(s)-k+1):
+        d=s[i:i+k]
+        t=0
+        t+=(d.count("a") +d.count("e") + d.count("i") + d.count("o") + d.count("u"))
+        if (max<t):
+            max=t
+            str=d
+        
+    if max==0:
+        return("Not found!")
+    else:
+        return(str)
+    # Write your code here
+if __name__ == '__main__':
